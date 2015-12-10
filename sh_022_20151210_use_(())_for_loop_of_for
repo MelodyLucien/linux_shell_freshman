@@ -1,0 +1,15 @@
+#!/bin/bash
+#program
+#    use to :use another type of for with (())
+#History
+#2015/Dec 10 zhouhao2 first release
+
+read -p "give me a positive number i will make a plus from 1 to it :" end_number
+sum=0
+for (( i=1;i<=$end_number;i=i+1 ))
+do
+  sum=$(($sum+$i))
+done
+
+echo the sum is $sum
+

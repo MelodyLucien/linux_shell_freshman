@@ -1,0 +1,17 @@
+#!/bin/bash
+#program
+#    use to :get user'words and give him a response
+#History
+#2015/Dec 9 zhouhao2 first release
+echo i guess you give me your hello
+if [ $# -eq 0 ];then
+  echo please give me a string
+elif [ $# -lt 2 ] && [ $# -gt 0 ];then
+   echo please give me more than two strings
+elif [ "$1" == "hello" ];then
+ echo hello you too how are you doing
+elif [ -z $1 ];then
+  echo "i don't know your words"
+fi
+
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+#program
+#    use to : use [] and compare strings
+#History
+#2015/Dec 9 zhouhao2 first release
+
+read -p "please input y/n:" yes
+if [ "$yes" == "y" -o "$yes" == "Y" ];then
+echo your chose is ok
+elif [ "$yes" == "n" -o "$yes" == "N" ];then
+echo your input is no
+fi

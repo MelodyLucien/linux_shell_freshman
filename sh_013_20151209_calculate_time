@@ -1,0 +1,27 @@
+#!/bin/bash
+#program
+#    use to : caulate time for retiring
+#History
+#2015/Dec 9 zhouhao2 first release
+echo this program will give you the days you have to work from now
+echo so ,give me the date you retire like yyyymmdd ex-->20151209
+read -p "input your date" rd
+
+#test the format of input
+date_test=$(echo $rd | grep "[0-9]\{8\}")
+if [ -z "${date_test}" ];then
+   echo your input format is wrong
+   exit 1
+fi
+
+#calculate the days the user have to wait
+declare -i date1=$(date --date="$rd" +%s)
+declare -i date_now=$(date +%s)
+declare -i date_delta=$((${date1}-${date_now}))
+declare -i date_days=$((${date_delta}/24/60/60))
+
+if [ ${date_days} -lt 0 ] ; then
+  echo you have retired for ${date_days},are you kidding me!!
+else
+ echo you need to wait just ${date_days} days 
+fi

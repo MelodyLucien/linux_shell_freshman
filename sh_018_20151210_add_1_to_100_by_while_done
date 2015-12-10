@@ -1,0 +1,17 @@
+#!/bin/bash
+#program
+#    use to : pratice for while done
+#History
+#2015/Dec 10 zhouhao2 first release
+echo please wait
+declare -i i=1
+declare -i sum=0
+while [ $i -lt 101 ]
+do
+  sum=$((${sum}+${i}))
+  i=$((${i}+1))
+done
+
+echo the sum is $sum
+
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+#program
+#    use to :deal with user's input 
+#History
+#2015/Dec 10 zhouhao2 first release
+
+read -p "give me your choice,please select from (1,2,3)" number
+case $number in
+     "1")
+     echo you chose 1
+     ;;
+     "2")
+     echo you chose 2
+     ;;
+     "3")
+     echo you chose 3
+      ;;
+      *)
+     echo you are kidding me, man,please follow me ok?
+      ;;
+esac
+

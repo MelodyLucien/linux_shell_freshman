@@ -1,0 +1,14 @@
+#!/bin/bash
+#program
+#    use to :practices for param releated
+#History
+#2015/Dec 9 zhouhao2 first release
+
+echo asure that you have given me some additional params
+echo "now i give you some params'information bellow:"
+echo "the params number is $#"
+echo "the params belong to command $0"
+echo "the first param is $1"
+echo "the second param is $2"
+echo "all params are here: $@"
+

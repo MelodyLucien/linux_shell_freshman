@@ -37,4 +37,7 @@ fi
 # remove the middle file
 mv tmp_pp .number_prefix
 
+chmod a+x $filename_full
+
 echo successfully create file $filename_full
+

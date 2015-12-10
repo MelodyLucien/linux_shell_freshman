@@ -1,0 +1,24 @@
+#!/bin/bash
+#program
+#    use to :use for to ls files of the dir and show their perm
+#History
+#2015/Dec 10 zhouhao2 first release
+
+read -p "please input a diretory: " dir
+
+if [ -z "$dir" -o ! -d "$dir" ];then
+   echo your dir is illegal,sorry
+   exit 1
+fi
+
+for filelist in $(ls "$dir")
+do
+perm=""
+test -r "$dir/$filelist" && perm="$perm readable"
+test -w "$dir/$filelist" && perm="$perm writable"
+test -x "$dir/$filelist" && perm="$perm executable"
+echo $filelist is $perm 
+done
+
+
+

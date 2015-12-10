@@ -1,0 +1,18 @@
+#!/bin/bash
+#program
+#    use to :use case statement
+#History
+#2015/Dec 10 zhouhao2 first release
+
+case $1 in
+   "hello")
+      echo hello too
+      ;;
+    "")
+      echo your input is null
+     ;;
+    *)
+     echo "i don't know your words"
+     ;;
+esac
+

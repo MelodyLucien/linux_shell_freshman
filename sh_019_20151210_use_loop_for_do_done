@@ -1,0 +1,12 @@
+#!/bin/bash
+#program
+#    use to :print animals here
+#History
+#2015/Dec 10 zhouhao2 first release
+
+for var in "dog" "cat" "elephant"
+do
+
+  echo there are $var s
+
+done

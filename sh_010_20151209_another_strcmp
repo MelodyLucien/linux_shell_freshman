@@ -1,0 +1,15 @@
+#!/bin/bash
+#program
+#    use to :use if ^ then to optimize the scripts before
+#History
+#2015/Dec 9 zhouhao2 first release
+
+echo -n "please input your choses (y/n):"
+read ok
+if [ ${ok} == "y" ] || [ ${ok} == "Y" ] ; then
+   echo your choices is ok
+elif [ ${ok} == "n" ] || [ ${ok} == "N" ]; then
+   echo your choices is not ok
+else
+   echo i dont know your words
+fi

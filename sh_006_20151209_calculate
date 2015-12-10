@@ -1,0 +1,11 @@
+#!/bin/bash
+#program
+#    use to : simple practice for calculate
+#History
+#2015/Dec 9 zhouhao2 first release
+
+read -p "first number" firstnumber
+read -p "second number" secondnumber
+result=$(($firstnumber+$secondnumber))
+echo result is $result
+

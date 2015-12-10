@@ -1,0 +1,28 @@
+#!/bin/bash
+#program
+#    use to : use grep and other to detect the information
+#History
+#2015/Dec 9 zhouhao2 first release
+
+echo now i will detect port 80,21,631,633,53
+test=$(netstat -tuln | grep ":80")
+if [ ! -z "$test" ];then
+  echo "www service is open"
+fi
+test=$(netstat -tuln | grep ":21")
+if [ ! -z "$test" ];then
+  echo "21 service is open"
+fi
+test=$(netstat -tuln | grep ":631")
+if [ ! -z "$test" ];then
+  echo "631 service is open"
+fi
+test=$(netstat -tuln | grep ":633")
+if [ ! -z "$test" ];then
+  echo "633 service is open"
+fi
+test=$(netstat -tuln | grep ":53")
+if [ ! -z "$test" ];then
+  echo "53 service is open"
+fi
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+#program
+#    use to : use test command
+#History
+#2015/Dec 9 zhouhao2 first release
+
+echo -e "input the file name and i test it"
+read filename
+test -e $filename && echo "exist" || echo "not exist"
+test -f $filename && echo "normal file" || echo "is not a file"
+test -d $filename && echo "is a directory" || echo "is not a directory"
+test -w $filename && echo "you can write to it" || echo "you can not write it"
+test -r $filename && echo "you can read it" || echo "you can not read it"
+test -x $filename && echo "you can execute it" || echo "you can not execute it"
+

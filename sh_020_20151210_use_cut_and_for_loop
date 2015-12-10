@@ -1,0 +1,15 @@
+#!/bin/bash
+#program
+#    use to :use cut and for loop
+#History
+#2015/Dec 10 zhouhao2 first release
+
+users=$(cut -d ":" -f1 /etc/passwd)
+for var in $users
+do
+
+  echo $var
+
+done
+
+

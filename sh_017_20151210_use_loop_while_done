@@ -1,0 +1,16 @@
+#!/bin/bash
+#program
+#    use to :use while done to do sth 
+#History
+#2015/Dec 10 zhouhao2 first release
+
+echo "please  give me yes or YES "
+while  [ "$yn" != "yes" -a "$yn" != "YES" ]
+do
+
+  read -p "give me the correct words,or it will repeat all the time :" yn
+
+done
+
+
+
