@@ -1,0 +1,48 @@
+#!/bin/bash
+#program
+#    use to : quickly enter src file when i am woring,improve my work effciency 
+#History
+#2015/Dec 10 zhouhao2 first release
+export MY_HOME="/home/zhouhao2"
+export MY_TOP_DIR=${MY_HOME}"/android5.0/android-5.0.1_r1"
+export MY_SERVICE_PATH="frameworks/base/services/core/java/com/android/server"
+
+function into (){
+    #echo $1
+    case "$1" in
+        "pwm")
+            ;;
+        "wms")
+            deal $2 "wm" "WindowManagerService.java"
+            ;;
+        "pms")
+            deal $2 "pm" "PackageManagerService.java"
+            ;;
+        "tvs")
+            
+            ;;
+        "powers")
+            deal $2 "power" "PowerManagerService.java"
+            ;;
+        "ams")
+            deal $2 "am" "ActivityManagerService.java"
+            ;;
+        "inputs")
+            deal $2 "input" "InputManagerService.java"
+            ;;
+        *)
+            echo "invalid parameters!!"
+            ;;
+    esac
+}
+function deal (){
+    if [ "$1" == "-d" ] ; then
+        cd ${MY_TOP_DIR}"/"${MY_SERVICE_PATH}"/$2/"
+        echo $(pwd)
+    else
+        vim ${MY_TOP_DIR}"/"${MY_SERVICE_PATH}"/$1/$2"
+    fi
+
+}
+#set -vx
+into $1 $2
