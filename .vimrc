@@ -5,7 +5,7 @@ set expandtab
 "show high light on what you need
 set hlsearch
 "show cmds in status bar when you key in some words
-showcmd
+set showcmd
 "set increase search,show while searching
 set incsearch
 "set line number
