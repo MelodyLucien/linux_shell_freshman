@@ -1,3 +1,4 @@
+"set syntax
 "switch the current tabs already here to spaces 
 set retab
 "replace tab with spaces when you key in tab
