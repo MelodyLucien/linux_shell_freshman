@@ -1,3 +1,14 @@
+"switch the current tabs already here to spaces 
+set retab
+"replace tab with spaces when you key in tab
+set expandtab
+"show high light on what you need
+set hlsearch
+"show cmds in status bar when you key in some words
+showcmd
+"set increase search,show while searching
+set incsearch
+"set line number
 set number
 "set tab width is 4 char
 set ts=4
