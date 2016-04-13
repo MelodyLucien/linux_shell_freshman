@@ -12,6 +12,8 @@ set showcmd
 set incsearch
 "set line number
 set number
+"set tab's location to 4
+set tabstop=4
 "set tab width is 4 char
 set ts=4
 "set autointent as 4 spaces
