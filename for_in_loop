@@ -11,3 +11,6 @@ for i in {1..3}; do
 echo $i && sleep 3
 }&
 done
+
+#use seq for
+pkgs=( $(pm list packages) );for i in $(busybox seq ${#pkgs[@]} );do dumpsys package ${pkgs[i]}; done;
