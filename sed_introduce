@@ -1,1 +1,7 @@
+# use -i to in-place alter the file content matched
 sed -i 's/oldStr/newStr/g' filename
+
+# use '/match_string/{s/oldStr/newStr/g}'
+sed -i '/Google/{s/^/#&/}' filename
+
+
