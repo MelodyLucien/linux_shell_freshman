@@ -1,5 +1,7 @@
 "set syntax
 set syntax on
+"set c/c++'s indent format
+set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
 "switch the current tabs already here to spaces 
 set retab
 "replace tab with spaces when you key in tab
