@@ -4,4 +4,7 @@ sed -i 's/oldStr/newStr/g' filename
 # use '/match_string/{s/oldStr/newStr/g}'
 sed -i '/Google/{s/^/#&/}' filename
 
+#delete n characters at the end of each line
+sed 's/\(.\)\{n\}$//' file 
+
 
