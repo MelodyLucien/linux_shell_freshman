@@ -1,0 +1,15 @@
+[core]
+	editor = vim
+[user]
+	name = lucien
+	email = 825038797@qq.com
+[diff]
+	tool = auto 
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
