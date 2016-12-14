@@ -7,4 +7,7 @@ sed -i '/Google/{s/^/#&/}' filename
 #delete n characters at the end of each line
 sed 's/\(.\)\{n\}$//' file 
 
+# understand the real doc of sed
+sed -n 1,4a\kljljkljlk overview.txt
+
 
