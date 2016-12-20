@@ -10,4 +10,7 @@ sed 's/\(.\)\{n\}$//' file
 # understand the real doc of sed
 sed -n 1,4a\kljljkljlk overview.txt
 
+#add newline in the specific line without modifying the original line
+sed -i add1,add2 a\text filename
+
 
