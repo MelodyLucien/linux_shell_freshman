@@ -14,3 +14,16 @@ done
 
 #use seq for
 pkgs=( $(pm list packages) );for i in $(busybox seq ${#pkgs[@]} );do dumpsys package ${pkgs[$i]}; done;
+
+
+#test echo string to /dev/** to find which will print it out 
+devlist=$( ls /dev )
+for i in $devlist; do 
+{
+echo "1222" > /dev/$i;
+if [ "$?" = "0" ];then
+  echo "$i is not the current console";
+fi
+}
+done
+
