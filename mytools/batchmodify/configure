@@ -1,0 +1,7 @@
+keyevent           t1 3
+inputeventlabels   t2 4
+keycodes t3 5
+vendorproduct t4 6
+attrs t5 7
+systemapi t6 8
+currentapi t7 9
