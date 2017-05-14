@@ -1,0 +1,12 @@
+#!/bin/bash
+HELLO=(A B C D)
+for i in ${HELLO[*]}
+do
+
+echo $i;
+
+done
+
+echo "the number of the array is ${#HELLO[@]}"
+
+
