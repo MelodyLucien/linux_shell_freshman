@@ -7,7 +7,8 @@ sed -i '/Google/{s/^/#&/}' filename
 #delete n characters at the end of each line
 sed 's/\(.\)\{n\}$//' file 
 
-# understand the real doc of sed
+# understand the real doc of sed 
+# -n surpress automatically print pattern space
 sed -n 1,4a\kljljkljlk overview.txt
 
 #add newline in the specific line without modifying the original line
