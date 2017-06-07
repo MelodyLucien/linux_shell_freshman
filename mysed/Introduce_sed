@@ -15,3 +15,8 @@ sed -n 1,4a\kljljkljlk overview.txt
 sed -i add1,add2 a\text filename
 
 
+#the patern is  sed -option scripts(addr_range&command) file
+
+
+
+
